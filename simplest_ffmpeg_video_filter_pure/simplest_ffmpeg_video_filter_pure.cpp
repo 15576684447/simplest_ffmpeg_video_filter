@@ -1,24 +1,3 @@
-/** 
- * 最简单的基于FFmpeg的AVFilter例子 - 纯净版
- * Simplest FFmpeg AVfilter Example - Pure
- *
- * 雷霄骅 Lei Xiaohua
- * leixiaohua1020@126.com
- * 中国传媒大学/数字电视技术
- * Communication University of China / Digital TV Technology
- * http://blog.csdn.net/leixiaohua1020
- * 
- * 本程序使用FFmpeg的AVfilter实现了YUV像素数据的滤镜处理功能。
- * 可以给YUV数据添加各种特效功能。
- * 是最简单的FFmpeg的AVFilter方面的教程。
- * 适合FFmpeg的初学者。
- *
- * This software uses FFmpeg's AVFilter to process YUV raw data.
- * It can add many excellent effect to YUV data.
- * It's the simplest example based on FFmpeg's AVFilter. 
- * Suitable for beginner of FFmpeg 
- *
- */
 #include <stdio.h>
 
 #define __STDC_CONSTANT_MACROS
@@ -52,7 +31,8 @@ extern "C"
 
 
 
-
+//ffplay播放YUV
+//ffplay -f rawvideo -video_size 480x272 .\sintel_480x272_yuv420p.yuv
 int main(int argc, char* argv[])
 {
     int ret;
